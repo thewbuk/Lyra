@@ -1,5 +1,5 @@
 import { Metadata } from "next"
-import { BriefReviewDashboard } from "../components/brief-review/brief-review-dashboard"
+import { BriefReviewDashboard } from "./components/brief-review-dashboard"
 
 export const metadata: Metadata = {
   title: "Brief Review",
