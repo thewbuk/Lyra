@@ -129,6 +129,12 @@ const LyraCreatorDashboard = () => {
               Campaigns
             </Button>
           </Link>
+          <Link href="/brief-review">
+            <Button variant="outline">
+              <ClipboardCheck className="mr-2 h-4 w-4" />
+              Brief Review
+            </Button>
+          </Link>
         </div>
       </div>
 
