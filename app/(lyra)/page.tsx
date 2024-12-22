@@ -26,6 +26,7 @@ import {
   Users,
   Layout,
   ListChecks,
+  ClipboardCheck,
 } from 'lucide-react';
 import { toast } from 'sonner';
 import Link from 'next/link';
@@ -131,7 +132,29 @@ const LyraCreatorDashboard = () => {
         </div>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-4">
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <Link href="/campaigns">
+          <Card className="cursor-pointer">
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">Campaigns</CardTitle>
+              <Layout className="h-4 w-4 text-muted-foreground" />
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold">12</div>
+            </CardContent>
+          </Card>
+        </Link>
+        <Link href="/brief-review">
+          <Card className="cursor-pointer">
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">Brief Reviews</CardTitle>
+              <ClipboardCheck className="h-4 w-4 text-muted-foreground" />
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold">24</div>
+            </CardContent>
+          </Card>
+        </Link>
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">
@@ -154,30 +177,6 @@ const LyraCreatorDashboard = () => {
           <CardContent>
             <div className="text-2xl font-bold">127</div>
             <p className="text-xs text-muted-foreground">+22 from last month</p>
-          </CardContent>
-        </Card>
-        <Card>
-          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Total Reach</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold">14.2M</div>
-            <p className="text-xs text-muted-foreground">
-              +2.1M from last month
-            </p>
-          </CardContent>
-        </Card>
-        <Card>
-          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">
-              Conversion Rate
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold">3.2%</div>
-            <p className="text-xs text-muted-foreground">
-              +0.3% from last month
-            </p>
           </CardContent>
         </Card>
       </div>
