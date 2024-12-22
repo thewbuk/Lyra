@@ -22,30 +22,6 @@ export function MobileNav() {
   const { user } = useUser();
   const { signOut } = useClerk();
 
-  const handleRandomClick = async (e: React.MouseEvent) => {
-    e.preventDefault();
-    try {
-      const { data, error } = await supabase()
-        .from('rooms')
-        .select('id')
-        .eq('is_public', true)
-        .order('created_at', { ascending: false });
-
-      if (error) throw error;
-      if (!data || data.length === 0) {
-        router.push('/home');
-        return;
-      }
-
-      const randomIndex = Math.floor(Math.random() * data.length);
-      const randomRoom = data[randomIndex];
-      router.push(`/room/${randomRoom.id}`);
-      setOpen(false);
-    } catch (error) {
-      console.error('Error fetching random room:', error);
-      router.push('/home');
-    }
-  };
 
   return (
     <>
@@ -65,32 +41,9 @@ export function MobileNav() {
             className="flex items-center p-4"
             onOpenChange={setOpen}
           >
-            <Youtube className="mr-2 h-6 w-6" />
+            <Home className="mr-2 h-6 w-6" />
             <span className="font-bold">Lyra</span>
           </MobileLink>
-          <div className="flex flex-col flex-1 px-6">
-            <div className="flex flex-col space-y-3">
-              <MobileLink href="/home" onOpenChange={setOpen}>
-                <Home className="mr-2 h-4 w-4" />
-                Rooms
-              </MobileLink>
-              <MobileLink href="/categories" onOpenChange={setOpen}>
-                <Tv className="mr-2 h-4 w-4" />
-                Category
-              </MobileLink>
-              <div
-                className="flex items-center p-2 cursor-pointer"
-                onClick={handleRandomClick}
-              >
-                <Book className="mr-2 h-4 w-4" />
-                Discover
-              </div>
-              <MobileLink href="/create" onOpenChange={setOpen}>
-                <Plus className="mr-2 h-4 w-4" />
-                Create Room
-              </MobileLink>
-            </div>
-          </div>
           <div className="border-t mt-auto">
             <div className="px-6 py-4">
               <SignedIn>
@@ -117,9 +70,6 @@ export function MobileNav() {
                     </div>
                   </div>
                   <div className="space-y-1">
-                    <MobileLink href="/settings" onOpenChange={setOpen}>
-                      Settings
-                    </MobileLink>
                     <div
                       className="flex items-center p-2 text-red-600 cursor-pointer"
                       onClick={() => {
