@@ -10,7 +10,7 @@ export const Footer = () => {
         <div className="mx-auto flex max-w-6xl flex-col gap-4 md:flex-row md:items-center md:justify-between md:gap-0">
           <div className="flex items-center gap-2">
             <Clapperboard size={20} />
-            <h2 className="text-md font-normal">Cyclon</h2>
+            <h2 className="text-md font-normal">Lyra</h2>
           </div>
 
           <div className="flex items-center gap-2">

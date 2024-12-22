@@ -88,7 +88,7 @@ export function LandingPage() {
               <div className="absolute inset-0  group-hover:translate-x-full duration-1000 transition-transform" />
             </Badge>
             <h2 className="text-4xl font-bold mb-4 bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">
-              Why Choose Cyclon?
+              Why Choose Lyra?
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Experience the future of social video watching with our
@@ -165,7 +165,7 @@ export function LandingPage() {
             What Our Users Say
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Join thousands of satisfied users who love Cyclon
+            Join thousands of satisfied users who love Lyra
           </p>
         </motion.div>
         <Tabs defaultValue="carousel" className="w-full">

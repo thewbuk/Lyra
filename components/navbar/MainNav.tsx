@@ -56,10 +56,10 @@ export function MainNav({ categories }: MainNavProps) {
     <div className="mr-4 hidden xl:flex">
       <Link href="/" className="mr-6 flex items-center space-x-2">
         <Youtube className="h-6 w-6" />
-        <span className="font-bold">Cyclon</span>
+        <span className="font-bold">Lyra</span>
       </Link>
       <nav className="flex items-center gap-4 text-sm lg:gap-6">
-        <NavigationMenu>
+        {/* <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
               <Link href="/home" legacyBehavior passHref>
@@ -101,12 +101,12 @@ export function MainNav({ categories }: MainNavProps) {
                 <div className="px-2"> Discover </div>
               </a>
             </NavigationMenuItem>
-            {/* <NavigationMenuItem>
+            <NavigationMenuItem>
               <a href="/finance" className={navigationMenuTriggerStyle()}>
                 <Coins className="h-4 w-4" />
                 <div className="px-2"> Finance </div>
               </a>
-            </NavigationMenuItem> */}
+            </NavigationMenuItem>
             <NavigationMenuItem>
               <Link href="/create" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
@@ -116,7 +116,7 @@ export function MainNav({ categories }: MainNavProps) {
               </Link>
             </NavigationMenuItem>
           </NavigationMenuList>
-        </NavigationMenu>
+        </NavigationMenu> */}
       </nav>
     </div>
   );

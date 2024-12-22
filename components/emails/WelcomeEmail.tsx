@@ -32,7 +32,7 @@ export const WelcomeEmail = ({ email }: Readonly<WelcomeEmailProps>) => (
             color: '#f8fafc',
           }}
         >
-          Welcome to Cyclon! 🎮
+          Welcome to Lyra! 🎮
         </h1>
         <p
           style={{
@@ -57,7 +57,7 @@ export const WelcomeEmail = ({ email }: Readonly<WelcomeEmailProps>) => (
         <p
           style={{ fontSize: '16px', lineHeight: '1.6', marginBottom: '16px' }}
         >
-          We're excited to have you join us as we prepare to launch Cyclon - a
+          We're excited to have you join us as we prepare to launch Lyra - a
           new platform for watching YouTube channels with friends around the
           world. While we're putting the finishing touches on the platform, we'd
           love for you to join our community!
@@ -95,7 +95,7 @@ export const WelcomeEmail = ({ email }: Readonly<WelcomeEmailProps>) => (
       >
         <div style={{ marginBottom: '16px' }}>
           <a
-            href="https://cyclon.vercel.app/changelog"
+            href="https://Lyra.vercel.app/changelog"
             style={{
               color: '#94a3b8',
               textDecoration: 'none',
@@ -127,7 +127,7 @@ export const WelcomeEmail = ({ email }: Readonly<WelcomeEmailProps>) => (
           </a>
         </div>
         <p style={{ color: '#64748b', fontSize: '14px' }}>
-          {new Date().getFullYear()} Cyclon. All rights reserved.
+          {new Date().getFullYear()} Lyra. All rights reserved.
         </p>
       </div>
     </div>

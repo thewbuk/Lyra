@@ -21,7 +21,7 @@ export function HomeHero() {
             Join YouTube Watch Rooms Together!
           </h1>
           <p className="text-sm leading-6 text-muted-foreground">
-            Cyclon is a platform for watching YouTube channels with friends
+            Lyra is a platform for watching YouTube channels with friends
             around the world.
             <br />
             Create or join a room to start watching together.

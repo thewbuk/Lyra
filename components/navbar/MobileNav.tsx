@@ -66,7 +66,7 @@ export function MobileNav() {
             onOpenChange={setOpen}
           >
             <Youtube className="mr-2 h-6 w-6" />
-            <span className="font-bold">Cyclon</span>
+            <span className="font-bold">Lyra</span>
           </MobileLink>
           <div className="flex flex-col flex-1 px-6">
             <div className="flex flex-col space-y-3">

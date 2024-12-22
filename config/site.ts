@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: 'Cyclon',
+  name: 'Lyra',
   description:
     'Beautifully designed website where you can watch anime, drama, movies and read mangas for free. Built with Next.JS and shadcn/ui.',
   mainNav: [
@@ -28,7 +28,7 @@ export const siteConfig = {
   ],
   links: {
     twitter: 'https://twitter.com/avalynndev',
-    github: 'https://github.com/avalynndev/Cyclon',
-    Cyclon: '/',
+    github: 'https://github.com/avalynndev/Lyra',
+    Lyra: '/',
   },
 };

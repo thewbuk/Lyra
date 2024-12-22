@@ -49,7 +49,7 @@ export const testimonials: Testimonial[] = [
     name: 'Alex Johnson',
     role: 'Content Creator',
     content:
-      'Cyclon has transformed how I watch YouTube with my community. The synchronization is perfect!',
+      'Lyra has transformed how I watch YouTube with my community. The synchronization is perfect!',
     rating: 5,
     avatar: '👨‍💻',
     stats: { followers: '50K+', sessions: '200+' },
@@ -58,7 +58,7 @@ export const testimonials: Testimonial[] = [
     name: 'Sarah Chen',
     role: 'Student',
     content:
-      'I use Cyclon for study groups. We watch educational content together and discuss in real-time.',
+      'I use Lyra for study groups. We watch educational content together and discuss in real-time.',
     rating: 5,
     avatar: '👩‍🎓',
     stats: { studyHours: '300+', groupSize: '25+' },
