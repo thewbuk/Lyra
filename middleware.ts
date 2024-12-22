@@ -12,6 +12,7 @@ const isPublicRoute = createRouteMatcher([
   '/changelog(.*)',
   '/privacy(.*)',
   '/api/send(.*)',
+  '/lyra(.*)',
 ]);
 
 export default clerkMiddleware(

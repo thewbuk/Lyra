@@ -1,0 +1,5 @@
+{
+  "/(lyra)/page": "app/(lyra)/page.js",
+  "/(lyra)/analytics/page": "app/(lyra)/analytics/page.js",
+  "/_not-found/page": "app/_not-found/page.js"
+}
